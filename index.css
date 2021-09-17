@@ -1,0 +1,142 @@
+:root {
+  --white: #FFFFFF;
+  --dark-blue: hsl(223, 47%, 23%);
+  --desat-blue: hsl(224, 23%, 55%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --pale: hsl(255, 100%, 98%);
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('./images/pattern-background-desktop.svg');
+  background-size: 100%;
+  background-color: var(--pale-blue);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Card-container {
+  border-radius: 1em;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 360px;
+  text-align: center;
+}
+
+.card--hero-img {
+  border-radius: 1em 1em 0 0;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.card-bottom--content {
+  padding: 2em;
+}
+
+.card--title {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.card--content {
+  margin: 1em 0;
+  color: var(--desat-blue);
+  line-height: 1.5em;
+}
+
+.card-bottom--plan {
+  align-items: center;
+  background-color: var(--pale);
+  border-radius: 1em;
+  display: flex;
+  padding: 1em 1.5em;
+}
+
+.card--plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1em;
+}
+
+.card--plan-bold {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.card--plan {
+  color: var(--desat-blue);
+}
+
+.change--link {
+  color: var(--bright-blue);
+  display: flex;
+  font-weight: 700;float: right;
+  flex-grow: 1;
+  font-size: 14px;
+  justify-content: flex-end;
+}
+
+.payment-button, .cancel-button {
+  width: 100%;
+  padding: 1.1em 2em;
+}
+
+.payment-button:hover, .cancel-button:hover {
+  cursor: pointer;
+}
+
+.change--link:hover, .change--link:active, .change--link:focus {
+  color: #7369E9;
+}
+
+.payment-button:hover, .payment-button:active, .payment-button:focus {
+  background-color: #7369E9;
+  border-color: #7369E9;
+}
+
+.payment-button {
+  background-color: var(--bright-blue);
+  border-radius: 0.50em;
+  border-color: var(--bright-blue);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  color: var(--white);
+  font-weight: 900;
+  margin: 2em 0 1em;
+}
+
+.cancel-button {
+  background: var(--white);
+  border: none;
+  color: var(--desat-blue);
+  font-weight: 900;
+  margin: 0;
+}
+
+.cancel-button:hover, .cancel-button:active, .cancel-button:focus {
+  color: #394053;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 5em;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
